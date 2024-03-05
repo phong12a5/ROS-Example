@@ -1,0 +1,2 @@
+Invoking command in '/home/phongdang/ros2_example/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/phongdang/ros2_example/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/phongdang/ros2_example/build/my_cpp_pkg -- -j4 -l4
+Invoked command in '/home/phongdang/ros2_example/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=/home/phongdang/ros2_example/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/phongdang/ros2_example/build/my_cpp_pkg -- -j4 -l4

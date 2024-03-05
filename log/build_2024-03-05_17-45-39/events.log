@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.000506] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000619] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000670] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.098683] (-) TimerEvent: {}
+[0.106082] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.107196] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.108396] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/phongdang/ros2_example/build/my_cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/phongdang/ros2_example/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'phongdang'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/phongdang'), ('OLDPWD', '/home/phongdang/ros2_example/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1025'), ('SYSTEMD_EXEC_PID', '1191'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5362'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/phongdang/ros2_example/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'phongdang'), ('JOURNAL_STREAM', '8:32928'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'phongdang'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/phong-vm:@/tmp/.ICE-unix/1160,unix/phong-vm:/tmp/.ICE-unix/1160'), ('INVOCATION_ID', '7ae5f4c2bb904cd9a5116b7d00246d6c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LO62J2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/phongdang/ros2_example/install/my_py_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:945053aa-c5b4-4a77-abb0-e7c7c11d781a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/phongdang/ros2_example/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/phongdang/ros2_example/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/phongdang/ros2_example/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.156821] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199459] (-) TimerEvent: {}
+[0.300357] (-) TimerEvent: {}
+[0.349319] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.392032] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.399386] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400776] (-) TimerEvent: {}
+[0.408899] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.430718] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.458290] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.501292] (-) TimerEvent: {}
+[0.540347] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.542178] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601836] (-) TimerEvent: {}
+[0.702427] (-) TimerEvent: {}
+[0.723857] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.803479] (-) TimerEvent: {}
+[0.904466] (-) TimerEvent: {}
+[1.005391] (-) TimerEvent: {}
+[1.066635] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.083260] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.086898] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/phongdang/ros2_example/build/my_cpp_pkg\n'}
+[1.105926] (-) TimerEvent: {}
+[1.149644] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o\x1b[0m\n'}
+[1.206352] (-) TimerEvent: {}
+[1.308773] (-) TimerEvent: {}
+[1.410314] (-) TimerEvent: {}
+[1.510795] (-) TimerEvent: {}
+[1.611729] (-) TimerEvent: {}
+[1.713287] (-) TimerEvent: {}
+[1.814187] (-) TimerEvent: {}
+[1.914968] (-) TimerEvent: {}
+[2.015920] (-) TimerEvent: {}
+[2.116326] (-) TimerEvent: {}
+[2.217262] (-) TimerEvent: {}
+[2.318414] (-) TimerEvent: {}
+[2.419068] (-) TimerEvent: {}
+[2.519755] (-) TimerEvent: {}
+[2.620945] (-) TimerEvent: {}
+[2.722077] (-) TimerEvent: {}
+[2.823589] (-) TimerEvent: {}
+[2.924299] (-) TimerEvent: {}
+[3.025545] (-) TimerEvent: {}
+[3.126389] (-) TimerEvent: {}
+[3.227248] (-) TimerEvent: {}
+[3.328584] (-) TimerEvent: {}
+[3.429347] (-) TimerEvent: {}
+[3.530785] (-) TimerEvent: {}
+[3.631838] (-) TimerEvent: {}
+[3.732643] (-) TimerEvent: {}
+[3.833966] (-) TimerEvent: {}
+[3.935465] (-) TimerEvent: {}
+[4.036487] (-) TimerEvent: {}
+[4.137862] (-) TimerEvent: {}
+[4.238901] (-) TimerEvent: {}
+[4.340277] (-) TimerEvent: {}
+[4.441205] (-) TimerEvent: {}
+[4.542203] (-) TimerEvent: {}
+[4.644346] (-) TimerEvent: {}
+[4.745285] (-) TimerEvent: {}
+[4.845769] (-) TimerEvent: {}
+[4.946822] (-) TimerEvent: {}
+[5.047590] (-) TimerEvent: {}
+[5.148164] (-) TimerEvent: {}
+[5.250074] (-) TimerEvent: {}
+[5.351195] (-) TimerEvent: {}
+[5.451935] (-) TimerEvent: {}
+[5.552901] (-) TimerEvent: {}
+[5.653538] (-) TimerEvent: {}
+[5.754913] (-) TimerEvent: {}
+[5.810508] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/phongdang/ros2_example/src/my_cpp_pkg/src/my_first_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.811077] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/phongdang/ros2_example/src/my_cpp_pkg/src/my_first_node.cpp:6:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.811229] (my_cpp_pkg) StderrLine: {'line': b'    6 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::init(argc, argv);\n'}
+[5.811297] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.812153] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/phongdang/ros2_example/src/my_cpp_pkg/src/my_first_node.cpp:12:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.812334] (my_cpp_pkg) StderrLine: {'line': b'   12 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::spin(node);\n'}
+[5.812430] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.812496] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/phongdang/ros2_example/src/my_cpp_pkg/src/my_first_node.cpp:13:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.812562] (my_cpp_pkg) StderrLine: {'line': b'   13 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::shutdown();\n'}
+[5.812628] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.855941] (-) TimerEvent: {}
+[5.956847] (-) TimerEvent: {}
+[6.057552] (-) TimerEvent: {}
+[6.158704] (-) TimerEvent: {}
+[6.259626] (-) TimerEvent: {}
+[6.360841] (-) TimerEvent: {}
+[6.461602] (-) TimerEvent: {}
+[6.523984] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cpp_node.dir/build.make:76: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1\n'}
+[6.524580] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_node.dir/all] Error 2\n'}
+[6.524712] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.529131] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[6.561911] (-) TimerEvent: {}
+[6.663066] (-) TimerEvent: {}
+[6.686827] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[6.689528] (-) EventReactorShutdown: {}
