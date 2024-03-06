@@ -7,6 +7,9 @@ from std_msgs.msg import Int64
 class NumberPublisher(Node):
     def __init__(self):
         super().__init__('number_publisher')
+        
+        self.declare_parameter('test_parameter', 2)
+        
         self.numer = 2
         self.publisher_ = self.create_publisher(Int64, 'number', 10)
         self.timer_ = self.create_timer(0.5, self.publish_number)

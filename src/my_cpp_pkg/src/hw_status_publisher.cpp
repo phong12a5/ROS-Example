@@ -17,7 +17,7 @@ class HWStatusPublisherNode : public rclcpp::Node
             msg.are_motors_ready = true;
             msg.debug_message = "All is running smoothly";
             publisher_->publish(msg);
-            RCLCPP_INFO(this->get_logger(), "Publishing: '%f'", msg.temperature);
+            RCLCPP_INFO(this->get_logger(), "Publishing: '%ld'", msg.temperature);
         }
 
     private:
